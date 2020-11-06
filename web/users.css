@@ -4,58 +4,58 @@
 */
 
 body {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(66,68,68,1) 60%, rgba(255,255,255,1) 100%);
-  opacity: 1;  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(66,68,68,1) 60%, rgba(255,255,255,1) 100%);
+    opacity: 1;  
 }
 
 .header h1 {
-  font-size: 85px;
-  color: white;
-  font-family: 'IBM Plex Serif', serif;
-  background-position: 98%;
-  background-size: 70px;
-  background-repeat: no-repeat;
+    font-size: 85px;
+    color: white;
+    font-family: 'IBM Plex Serif', serif;
+    background-position: 98%;
+    background-size: 70px;
+    background-repeat: no-repeat;
 } 
 
 img{
-width: 25%;
-height: auto;
-border-radius: 25px;
-float:none;
-padding:10px;
+    width: 25%;
+    height: auto;
+    border-radius: 25px;
+    float:none;
+    padding:10px;
 }
 
 .column{
-  float: left;
-  margin: 10pt;
-  padding-top: 10px; 
-  padding-bottom: 10px; 
-  width: 30%;
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(82,84,84,1) 25%, rgba(74,39,39,1) 75%, rgba(0,0,0,1) 100%);
-  color: white;
-  opacity: 1;
-  border-radius: 10px;
-  font-size: 18px;
-  font-family: 'IBM Plex Serif', serif;
-  box-shadow: 10px 4px 8px 1px rgba(0, 0, 0, 0.2);
+    float: left;
+    margin: 10pt;
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    width: 30%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(82,84,84,1) 25%, rgba(74,39,39,1) 75%, rgba(0,0,0,1) 100%);
+    color: white;
+    opacity: 1;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'IBM Plex Serif', serif;
+    box-shadow: 10px 4px 8px 1px rgba(0, 0, 0, 0.2);
 }
 
 .columnWide{
-  float: left;
-  margin: 20pt;
-  padding-top: 10px; 
-  padding-bottom: 10px; 
-  width: 63.7%;
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(74,39,39,1) 25%, rgba(82,84,84,1) 75%, rgba(0,0,0,1) 100%);
-  color: white;
-  opacity: 1;
-  border-radius: 10px;
-  font-size: 18px;
-  font-family: 'IBM Plex Serif', serif;
-  box-shadow: 10px 4px 8px 1px rgba(0, 0, 0, 0.2);
+    float: left;
+    margin: 20pt;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    width: 63.7%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(74,39,39,1) 25%, rgba(82,84,84,1) 75%, rgba(0,0,0,1) 100%);
+    color: white;
+    opacity: 1;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'IBM Plex Serif', serif;
+    box-shadow: 10px 4px 8px 1px rgba(0, 0, 0, 0.2);
 }
 
 tr[name="labels"]{
@@ -65,31 +65,31 @@ tr[name="labels"]{
 }
 
 input[type=submit] {
-  background-color: lightgray;
-  color: black;
-  padding: 4px 50px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 4%;
-  margin-right: 4pt;
-  margin-left: inherit;
-  float: left;
-  font-family: 'IBM Plex Serif', serif; 
-  font-size: 20px;
-  font-weight: 900;
+    background-color: lightgray;
+    color: black;
+    padding: 4px 50px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 4%;
+    margin-right: 4pt;
+    margin-left: inherit;
+    float: left;
+    font-family: 'IBM Plex Serif', serif; 
+    font-size: 20px;
+    font-weight: 900;
 }
 
 .col-30{
-  float: left;
-  width: 88%;
-  margin-top: 6px;
-  margin-left: 5%;
-  border-radius: 4px;
-  font-family: 'IBM Plex Serif', serif;
-  font-weight: bold; 
-  font-size: 18px;
-  color: white;
+    float: left;
+    width: 88%;
+    margin-top: 6px;
+    margin-left: 5%;
+    border-radius: 4px;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: bold; 
+    font-size: 18px;
+    color: white;
 }
 
 
@@ -110,51 +110,51 @@ h1 {
 }
 
 @media screen and (max-width: 800px) {
-  .column {   
-    width: 100%;
-    padding: 0;
-  }
+    .column {   
+        width: 100%;
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 200px) {
-  .column{
-    float: none;
-    width: 100%;
-  }
+    .column{
+        float: none;
+        width: 100%;
+    }
 }
 
 
 @media screen and (max-width: 200px) {
-  .columnWide{
-    float: none;
-    width: 100%;
-  }
+    .columnWide{
+        float: none;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 1400px) and (min-width: 1091px) {
-  .columnWide {   
-    width: 80%;
-    padding: 0;
-  }
+    .columnWide {   
+        width: 80%;
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 1090px) and (min-width: 966px) {
-  .columnWide {   
-    width: 90%;
-    padding: 0;
-  }
+    .columnWide {   
+        width: 90%;
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 965px) and (min-width: 801px) {
-  .columnWide {   
-    width: 95%;
-    padding: 0;
-  }
+    .columnWide {   
+        width: 95%;
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 800px) {
-  .columnWide {   
-    width: 100%;
-    padding: 0;
-  }
+    .columnWide {   
+        width: 100%;
+        padding: 0;
+    }
 }

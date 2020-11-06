@@ -5,43 +5,37 @@
  */
 package dataaccess;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.util.ArrayList;
+import java.util.List;
+import javax.persistence.EntityManager;
 import models.Role;
+
 /**
  *
  * @author Craig Kubinec
  */
 public class RoleDB {
-    
-    public ArrayList<Role> getAll() throws Exception {
-        
-    ArrayList<Role> roles = new ArrayList<>();
-    ConnectionPool connectionPool = ConnectionPool.getInstance();
-    Connection connection = connectionPool.getConnection();
-    PreparedStatement statement = null;
-    ResultSet result = null;
-    String sql = "SELECT * FROM user";
-    
-    try {
-        statement = connection.prepareStatement(sql);
-        result = statement.executeQuery();
-        while(result.next()){
-           int roleID = result.getInt(1);
-           String roleName = result.getString(2);
-           Role role = new Role(roleID, roleName);
-           roles.add(role);
+
+    public List<Role> getAll() throws Exception {
+
+        EntityManager em = DBUtil.getEmFactory().createEntityManager();
+
+        try {
+            List<Role> roles = em.createNamedQuery("Role.findAll", Role.class).getResultList();
+            return roles;
+        } finally {
+            em.close();
         }
-    } finally {
-        DBUtil.closeResultSet(result);
-        DBUtil.closePreparedStatement(statement);
-        connectionPool.freeConnection(connection);
+
     }
-    
-    return roles;
-  
+
+    public Role get(int roleId) throws Exception {
+        EntityManager em = DBUtil.getEmFactory().createEntityManager();
+        try {
+            Role role = em.createNamedQuery("Role.findByRoleId", Role.class).setParameter("roleId", roleId).getResultList().get(0);
+            return role;
+        } finally {
+            em.close();
+        }
     }
 
 }
